@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4F85B1;
+}
+
+.container {
+    background-color: #4F85B1;
+    padding: 2rem;
+    border-radius: 8px;
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.titulo {
+    font-weight: 600;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+
+}
+.imgLogin{
+    display: block;
+    width: 80px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.imgNomeLogin{
+    display: block;
+    width: 130px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.rodapeLogin{
+    margin-left: auto;
+    margin-right: auto;
+    color:#fff;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
