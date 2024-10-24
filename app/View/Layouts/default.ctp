@@ -31,10 +31,7 @@
 				<div class="offcanvas-body">
 					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Prontuários</a>
+							<a class="nav-link active" aria-current="page" href="#">Prontuarios</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Novo</a>
@@ -47,7 +44,6 @@
 			</div>
 		</div>
 	</nav>
-
 
 	<!-- conteúdo da página -->
 	<div class="container-fluid">
