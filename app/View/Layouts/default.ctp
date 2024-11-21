@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
 	<!-- navbar -->
 	<nav class="navbar  corPadrao sticky-top">
 		<div class="container-fluid">
@@ -22,7 +21,6 @@
 			<a class="navbar-brand" href="#">
 				<img src="./img/estacioLogo.png" alt="Estácio" width="50">
 			</a>
-			
 			<div class="offcanvas corPadrao offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
 					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fulano D. Tal</h5>
@@ -31,13 +29,13 @@
 				<div class="offcanvas-body">
 					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Prontuarios</a>
+							<a id="navProntuario" class="nav-link active" aria-current="page">Prontuarios</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Novo</a>
+							<a id="navNovo" class="nav-link" href="#">Novo</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Sair</a>
+							<a id="navSair" class="nav-link" href="#">Sair</a>
 						</li>
 					</ul>
 				</div>
@@ -58,7 +56,6 @@
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+	<script src="js/chamadaNav.js"></script>
 </body>
-
 </html>
