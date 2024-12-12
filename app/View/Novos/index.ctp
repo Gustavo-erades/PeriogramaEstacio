@@ -1,14 +1,6 @@
 <link rel="stylesheet" href="css/novoStyle.css">
 <div class="mt-3">
     <h1 class="display-4 text-light">Prontuários</h1>
-    <ul class="nav nav-underline">
-        <li class="nav-item">
-            <a class="nav-link navbarNovo" aria-current="page" href="#saudegeral">Saúde Geral</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link navbarNovo" href="#questionario">Questionário</a>
-        </li>
-    </ul>
 </div>
 <div class="mt-3">
     <?= $this->element('divFormsNovo') ?>

@@ -106,8 +106,8 @@
         <div class="row mb-4">
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="ouveEstaalos" name="ouveEstaalos" />
+                    <label for="ouveEstaalos" class="label">
                         <span>Ouve estalos quando abre ou fecha a boca?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
@@ -122,8 +122,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="doresCabecaPescoco" name="doresCabecaPescoco" />
+                    <label for="doresCabecaPescoco" class="label">
                         <span>Acorda com dores de cabeça e/ou pescoço?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
@@ -138,8 +138,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="rangerDente" name="rangerDente" />
+                    <label for="rangerDente" class="label">
                         <span>ACostuma apertar ou ranger os dentes?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
@@ -156,8 +156,8 @@
         <div class="row mb-4">
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="alteracaoFormaCor" name="alteracaoFormaCor" />
+                    <label for="alteracaoFormaCor" class="label">
                         <span>No rosto alguma alteração de forma/cor?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
@@ -173,8 +173,8 @@
 
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="fezRadiograma" name="fezRadiograma" />
+                    <label for="fezRadiograma" class="label">
                         <span>Fez radiograma recentemente?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
@@ -190,8 +190,8 @@
 
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="senteDor" name="senteDor" />
+                    <label for="senteDor" class="label">
                         <span>Sente alguma dor?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
@@ -210,8 +210,8 @@
 
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="mordeLingua" name="mordeLingua" />
+                    <label for="mordeLingua" class="label">
                         <span>Morde língua, lábios ou bochechas?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
@@ -226,8 +226,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="mastiga2Lados" name="mastiga2Lados" />
+                    <label for="mastiga2Lados" class="label">
                         <span>Mastiga dos dois lados da boca?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
@@ -246,8 +246,8 @@
 
             <div class="col-12 col-md-6 col-lg-5 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade" name="mobilidade" />
-                    <label for="mobilidade" class="label">
+                    <input type="checkbox" class="check" id="alteracaoFormaCor2" name="alteracaoFormaCor2" />
+                    <label for="alteracaoFormaCor2" class="label">
                         <span>Observou alguma alteração de forma, tamanho ou cor na boca?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
