@@ -1,6 +1,7 @@
 .corPadrao{
-    background-color: #3272A6;
-    color: aliceblue;
+   /* background-color: #3272A6;
+    color: aliceblue;*/
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
 }
 .navbar-toggler {
     background-color: rgba(240, 248, 255, 0.792);

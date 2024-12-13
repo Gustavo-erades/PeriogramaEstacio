@@ -2,3 +2,18 @@ body{
     background: #000 url('../img/imgTeste.png') no-repeat center center fixed;
     background-size: cover;
 }
+.btn-primary {
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    color: #FFFFFF;
+    font-weight: 'bold';
+    justify-content: center;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .btn-primary:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  }
