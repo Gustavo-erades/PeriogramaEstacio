@@ -283,7 +283,9 @@
         </div>
     </div>
     <!-- salva os dados do prontuário -->
-    <button class="mb-5 btn btnSalvarNovo" type="button">Salvar</button>
+    <button class="mb-5 button-43" role="button">Salvar</button>
+
+
 </div>
 <script>
     document.querySelectorAll('.editorOdonto').forEach(function(editorElement) {
