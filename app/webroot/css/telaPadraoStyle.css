@@ -1,6 +1,18 @@
 body{
     background: #000 url('../img/imgTeste.png') no-repeat center center fixed;
     background-size: cover;
+    font-family: Arial, sans-serif;
+}
+body::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.45);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .8;
+  z-index: -1;
 }
 .btn-primary {
     background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);

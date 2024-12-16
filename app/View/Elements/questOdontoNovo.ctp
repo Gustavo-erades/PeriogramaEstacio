@@ -2,6 +2,13 @@
     input[type='checkbox']{
     cursor:pointer;
   }
+  .caixa_perguntas {
+        /*background-color: #C8DCED;*/
+        background-color: rgba(56, 176, 227, 0.73);
+        border-radius: 6px;
+        padding: 8px;
+        margin-bottom: 20px;
+    }
 </style>
 <div class="form-group mt-2 mb-5">
     <div class="caixa_perguntas">
@@ -275,15 +282,15 @@
     <div class="caixa_perguntas">
         <!-- CKEditor para perguntas abertas -->
         <div class="mb-3">
-            <label for="implante" class="mb-2">Já realizou implantes dentários? Se <b>SIM</b> como foi sua experiência?</label>
+            <label for="implante" class="mb-2 text-light">Já realizou implantes dentários? Se <b>SIM</b> como foi sua experiência?</label>
             <textarea name="data[conteudo]" class="editorOdonto" id="implante"></textarea>
         </div>
         <div class="mb-3">
-            <label for="tratOdonto" class="mb-2">Quanto tempo tem seu último tratamento odontológico?</label>
+            <label for="tratOdonto" class="mb-2 text-light">Quanto tempo tem seu último tratamento odontológico?</label>
             <textarea name="data[conteudo]" class="editorOdonto" id="tratOdonto"></textarea>
         </div>
         <div class="mb-3">
-            <label for="sorriso" class="mb-2">O que o/a incomoda em seu sorriso?</label>
+            <label for="sorriso" class="mb-2 text-light">O que o/a incomoda em seu sorriso?</label>
             <textarea name="data[conteudo]" class="editorOdonto" id="sorriso"></textarea>
         </div>
     </div>

@@ -25,10 +25,13 @@
     background-color: aliceblue;
 }
 .nav-link{
-    color:rgb(201, 203, 206);
+    color:#fff;
 }
 .nav-link:hover{
-    color: aliceblue;
+    color: rgb(83, 171, 248);
+}
+.nav-link.active{
+    text-decoration: underline;
 }
 .navbar-nav .nav-link.active{
     color:aliceblue;

@@ -70,10 +70,12 @@
         overflow: auto;
     }
     .caixa_perguntas {
-        background-color: #C8DCED;
+        /*background-color: #C8DCED;*/
+        background-color: #38b0e370;
         border-radius: 6px;
         padding: 8px;
         margin-bottom: 20px;
+        font-style: #ffffff;
     }
     /* estilo para botão de salvar */
     .button-43 {

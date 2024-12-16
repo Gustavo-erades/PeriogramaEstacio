@@ -12,5 +12,7 @@
         public function edit(){
 
         }
+
+        // public $components=array('RequestHandler');
     }
 ?>

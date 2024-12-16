@@ -8,6 +8,8 @@
         public function index(){
 
         }
+
+        // public $components=array('RequestHandler');
     }
 
 ?>
