@@ -104,7 +104,6 @@
           padding: 1rem 2rem;
         }
       }
-      
     /* estilo navbar novo */
     a:hover, a:focus, a:active {
         text-decoration: none;
@@ -142,3 +141,7 @@
         .back-to-top.show {
             display: block;
         }
+
+        input[type='checkbox']{
+            cursor:pointer;
+          }

@@ -1,3 +1,8 @@
+<style>
+    input[type='checkbox']{
+    cursor:pointer;
+  }
+</style>
 <div class="form-group mt-2 mb-5">
     <div class="caixa_perguntas">
         <!-- Perguntas dos checkboxes -->

@@ -1,5 +1,5 @@
 <div class="mt-3">
-    <h1 class="display-4 text-light">Prontuários</h1>
+    <h1 class="display-4">Prontuários</h1>
 </div>
 <div class="input-group input-group-lg mt-3">
     <input type="text" class="form-control" placeholder="Procurar prontuário">
