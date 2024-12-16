@@ -28,10 +28,10 @@
     color:#fff;
 }
 .nav-link:hover{
-    color: rgb(83, 171, 248);
+    color: rgba(0, 255, 8, 0.9);
 }
 .nav-link.active{
-    text-decoration: underline;
+    font-weight: bold
 }
 .navbar-nav .nav-link.active{
     color:aliceblue;

@@ -20,9 +20,24 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<h5>Estácio-Odontologia</h5>
-			<a class="navbar-brand" href="#">
-				<img src="./img/estacioLogo.png" alt="Estácio" width="50">
-			</a>
+			<a class="navbar-brand" href="javascript:void(0);" onclick="recarregarNovaAba();">
+    <img src="./img/estacioLogo.png" alt="Estácio" width="50">
+</a>
+
+<script>
+function recarregarNovaAba() {
+    // Abre uma nova aba com a URL atual
+    const novaAba = window.open(window.location.href, '_blank');
+    
+    // Fecha a aba original (funciona apenas se a aba original foi aberta via JavaScript)
+    window.close();
+
+    // Garante que o foco fique na nova aba
+    if (novaAba) {
+        novaAba.focus();
+    }
+}
+</script>
 			<div class="offcanvas corPadrao offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
 					<h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <b>Fulano D. Tal</b></h5>
@@ -31,7 +46,7 @@
 				<div class="offcanvas-body">
 					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 						<li class="nav-item">
-							<a id="navProntuario" class="nav-link active" aria-current="page">Prontuarios</a>
+							<a id="navProntuario" class="nav-link" href="#">Prontuarios</a>
 						</li>
 						<li class="nav-item">
 							<a id="navNovo" class="nav-link" href="#">Novo</a>

@@ -1,21 +1,24 @@
 body{
-    background: #000 url('../img/imgTeste.png') no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
+  background: #000 url('../img/imgTeste.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
 }
+/* Camada de sombra sobre o fundo */
 body::after {
   content: '';
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.45); /* Fundo escuro com transparência */
   position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   opacity: .8;
-  z-index: -1;
+  z-index: -1; /* Fica atrás do conteúdo */
 }
+
+/* Estilização de Botões */
 .btn-primary {
-    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
     color: #FFFFFF;
     font-weight: 'bold';
     justify-content: center;
