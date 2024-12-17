@@ -28,7 +28,8 @@
     color:#fff;
 }
 .nav-link:hover{
-    color: rgba(0, 255, 8, 0.9);
+    font-weight: bolder;
+    color:#000000
 }
 .nav-link.active{
     font-weight: bold
@@ -39,4 +40,11 @@
 }
 body{
     background-color: rgb(144, 186, 220);
+}
+.nav-link-especial{
+    color:#fff;
+    text-decoration: none;
+}
+.nav-link-especial:hover{
+    text-decoration: underline;
 }

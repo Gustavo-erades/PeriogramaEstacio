@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="./css/navbarStyle.css">
 	<link rel="stylesheet" href="./css/componentesStyle.css">
 	<link rel="stylesheet" href="./css/telaPadraoStyle.css">
+	<link rel="stylesheet" href="./css/loading.css">
+	<link rel="shortcut icon" href="img/estacioLogo.png" type="image/x-icon">
 	<title>Prontuário odontológico</title>
 </head>
 
@@ -20,27 +22,16 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<h5>Estácio-Odontologia</h5>
-			<a class="navbar-brand" href="javascript:void(0);" onclick="recarregarNovaAba();">
-    <img src="./img/estacioLogo.png" alt="Estácio" width="50">
-</a>
-
-<script>
-function recarregarNovaAba() {
-    // Abre uma nova aba com a URL atual
-    const novaAba = window.open(window.location.href, '_blank');
-    
-    // Fecha a aba original (funciona apenas se a aba original foi aberta via JavaScript)
-    window.close();
-
-    // Garante que o foco fique na nova aba
-    if (novaAba) {
-        novaAba.focus();
-    }
-}
-</script>
+			<a class="navbar-brand" href="#" id="linkLogo">
+				<img src="./img/estacioLogo.png" alt="Estácio" width="50">
+			</a>
 			<div class="offcanvas corPadrao offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <b>Fulano D. Tal</b></h5>
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel"> 
+						<a href="#" class="nav-link-especial">
+							<b>Fulano D. Tal</b>
+						</a>
+					</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 				<div class="offcanvas-body">
@@ -65,15 +56,33 @@ function recarregarNovaAba() {
 		<div class="container">
 			<?php echo $this->fetch('content'); ?>
 		</div>
+		<div class="load">
+			<img src="img/estacioLogo.png" class="imgLogin imgLoad">
+			<img src="img/estacioNome.png" class="imgNomeLogin imgLoad">
+		</div>
 	</div>
-
 	<!-- jQuery deve ser carregado antes do Bootstrap -->
+	<script>
+		// $(document).ajaxStart(function() {
+		// 	$('.load').show(); 
+		// }).ajaxStop(function() {
+		// 	$('.load').hide(); 
+		// });
+		var conteudo = document.querySelector('.container');
+		var loading = document.querySelector('.load');
+		let i = setInterval(() => {
+			clearInterval(i);
+			conteudo.style.display = 'block';
+			loading.style.display = 'none';
+		}, 2000);
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<script src="js/chamadaNav.js"></script>
+	<script src="js/enviaProntuario.js"></script>
 	<script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
 </body>
 

@@ -1,6 +1,12 @@
 <link rel="stylesheet" href="css/novoStyle.css">
 <div class="mt-3">
     <h1 class="display-4">Prontuários</h1>
+    <p class="text-align-right text-light" style="font-weight:bold">
+        <?php 
+            date_default_timezone_set('America/Sao_Paulo');
+            echo date('d/m/Y');
+        ?>
+    </p>
 </div>
 <div class="mt-3">
     <?= $this->element('divFormsNovo') ?>

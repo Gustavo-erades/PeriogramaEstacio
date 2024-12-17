@@ -10,9 +10,10 @@
         color:#fff;
     }
     label{
-        font-color:#fff;
+        color:#fff;
     }
 </style>
+
 <div class="form-group mt-2 mb-5">
     <div class="caixa_perguntas">
         <!-- Perguntas dos checkboxes -->
@@ -286,8 +287,8 @@
         
                 <div class="col-12 col-md-6">
                 <div class="checkbox-wrapper-61">
-                <input type="checkbox" class="check" id="coraçãoBate" name="coraçãoBate" />
-                    <label for="coraçãoBate" class="label">
+                <input type="checkbox" class="check" id="coracaoBate" name="coracaoBate" />
+                    <label for="coracaoBate" class="label">
                         <span>Seu coração bate mais rápido ou mais devagar que o normal?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
                             <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />

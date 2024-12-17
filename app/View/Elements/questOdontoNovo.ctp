@@ -272,10 +272,6 @@
                     </label>
                 </div>
             </div>
-
-
-
-
         </div>
 
     </div>
@@ -294,9 +290,8 @@
             <textarea name="data[conteudo]" class="editorOdonto" id="sorriso"></textarea>
         </div>
     </div>
-    <!-- salva os dados do prontuário -->
-    <button class="button-43" role="button">Salvar</button>
 </div>
+
 <script>
     document.querySelectorAll('.editorOdonto').forEach(function(editorElement) {
         ClassicEditor

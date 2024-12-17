@@ -30,4 +30,10 @@ function getNovos(){
 }
 $('#navProntuario').on('click',getProntuarios);
 $('#navNovo').on('click',getNovos);
+$(document).ready(function() {
+    $('#linkLogo').on('click', function(event) {
+        event.preventDefault(); 
+        window.location.href = '/PeriogramaEstacio';  
+    });
+});
 getProntuarios();
