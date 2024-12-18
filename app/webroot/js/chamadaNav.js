@@ -28,8 +28,24 @@ function getNovos(){
         }
     })
 }
+function getNovosPacientes(){
+    $.ajax({
+        type:'GET',
+        url:'novosPacientes/index',
+        dataType:'html',
+        beforeSend:()=>{
+        },
+        success:(data)=>{
+            $("#mainContent").html(data);
+        },
+        error:()=>{
+            console.log("erro ao carregar novos prontuários");
+        }
+    })
+}
 $('#navProntuario').on('click',getProntuarios);
 $('#navNovo').on('click',getNovos);
+$('#navNovoPaciente').on('click',getNovosPacientes)
 $(document).ready(function() {
     $('#linkLogo').on('click', function(event) {
         event.preventDefault(); 

@@ -15,46 +15,13 @@
 </head>
 
 <body>
-	<!-- navbar -->
-	<nav class="navbar  corPadrao sticky-top">
-		<div class="container-fluid">
-			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<h5>Estácio-Odontologia</h5>
-			<a class="navbar-brand" href="#" id="linkLogo">
-				<img src="./img/estacioLogo.png" alt="Estácio" width="50">
-			</a>
-			<div class="offcanvas corPadrao offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasNavbarLabel"> 
-						<a href="#" class="nav-link-especial">
-							<b>Fulano D. Tal</b>
-						</a>
-					</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						<li class="nav-item">
-							<a id="navProntuario" class="nav-link" href="#">Prontuarios</a>
-						</li>
-						<li class="nav-item">
-							<a id="navNovo" class="nav-link" href="#">Novo</a>
-						</li>
-						<li class="nav-item">
-							<a id="navSair" class="nav-link" href="#">Sair</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
-
 	<!-- conteúdo da página -->
 	<div class="container-fluid">
 		<div class="container">
-			<?php echo $this->fetch('content'); ?>
+			<?php
+			 	echo $this->element('navbar');
+			 	echo $this->fetch('content'); 
+			 ?>
 		</div>
 		<div class="load">
 			<img src="img/estacioLogo.png" class="imgLogin imgLoad">
@@ -63,11 +30,6 @@
 	</div>
 	<!-- jQuery deve ser carregado antes do Bootstrap -->
 	<script>
-		// $(document).ajaxStart(function() {
-		// 	$('.load').show(); 
-		// }).ajaxStop(function() {
-		// 	$('.load').hide(); 
-		// });
 		var conteudo = document.querySelector('.container');
 		var loading = document.querySelector('.load');
 		let i = setInterval(() => {
@@ -84,6 +46,7 @@
 	<script src="js/chamadaNav.js"></script>
 	<script src="js/enviaProntuario.js"></script>
 	<script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+	<script src="js/app_chamadas.js"></script>
 </body>
 
 </html>
