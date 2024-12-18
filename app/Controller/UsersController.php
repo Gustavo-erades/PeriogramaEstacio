@@ -17,6 +17,7 @@ class UsersController extends AppController
     {
         $this->layout = 'ajax';
         if ($this->request->is('post')) {
+            return $this->redirect($this->Auth->redirectUrl('/'));
             // if ($this->Auth->login()) {
             //     return $this->redirect($this->Auth->redirectUrl('/'));
             // } else {
