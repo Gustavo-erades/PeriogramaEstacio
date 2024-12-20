@@ -1,10 +1,13 @@
 <?php
 
-Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+Router::connect('/', array('controller' => 'prontuarios', 'action' => 'index'));
+
+
+Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
+
 
 Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
-Router::connect('/users/login', array('controller' => 'users', 'action' => 'login'));
 
 CakePlugin::routes();
 

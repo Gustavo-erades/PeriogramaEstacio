@@ -20,7 +20,6 @@ function showAlert() {
 }
 
 function cadastrarUser() {
-    var url_atual = window.location.href;
     var email = $('#email').val();
     var senha = $('#senha').val();
     var confsenha = $('#confsenha').val();

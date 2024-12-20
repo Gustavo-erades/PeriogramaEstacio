@@ -227,7 +227,11 @@
  * the cake shell command: cake schema create Sessions
  */
 	Configure::write('Session', array(
-		'defaults' => 'php'
+		'defaults' => 'php',
+		'cookie' => 'prontuario',
+		'timeout' => 10,
+		'cookieTimeout' => 0,
+		'checkAgent' => false
 	));
 
 /**

@@ -31,7 +31,7 @@
                                     class="form-control shadow-sm" placeholder="Senha" required="required" type="senha" />
                                 <label for="senha">Senha</label>
                             </div>
-                            <button type="submit" class="btn btn-info w-100 shadow-sm text-light">Login</button>
+                            <button class="btn btn-info w-100 shadow-sm text-light">Login</button>
                         </form>
                         <div class="mt-3">
                             <p>Não possui uma conta?
@@ -73,7 +73,7 @@
             if (urlParams.has('erro') && urlParams.get('erro') === 'error') {
                 novoAlerta("Usuário ou senha incorretos! Tente novamente.");
                 urlParams.delete('erro');
-                window.history.replaceState({}, document.title, 'http://localhost/igutCRUD/');
+                window.history.replaceState({}, document.title, 'http://localhost/PeriogramaEstacio/');
             }
             Array.prototype.slice.call(forms).forEach(function(form) {
                 form.addEventListener('submit', function(event) {

@@ -15,13 +15,15 @@
 </head>
 
 <body>
+	<?php
+		echo $this->element('navbar');
+	?>
 	<!-- conteúdo da página -->
 	<div class="container-fluid">
 		<div class="container">
 			<?php
-			 	echo $this->element('navbar');
-			 	echo $this->fetch('content'); 
-			 ?>
+			echo $this->fetch('content');
+			?>
 		</div>
 		<div class="load">
 			<img src="img/estacioLogo.png" class="imgLogin imgLoad">

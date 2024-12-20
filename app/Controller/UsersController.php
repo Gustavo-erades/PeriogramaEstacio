@@ -3,59 +3,66 @@
 App::uses('AppController', 'Controller');
 
 class UsersController extends AppController
-{
-
+{/*
     public $helpers = array('Html', 'Form');
+    public $components = array(
+        'RequestHandler',
+        'Session',  // Para gerenciar a sessão do usuário
+    );
 
+    // Se você precisar permitir acesso sem login para o login e cadastro, defina aqui
     public function beforeFilter()
     {
         parent::beforeFilter();
-        $this->Auth->allow('add');
+        // Permitindo acesso aos métodos login e add sem autenticação
+        $this->Auth->allow('login', 'add');
     }
 
+    // Função de login
     public function login()
     {
-        $this->layout = 'ajax';
-        if ($this->request->is('post')) {
-            return $this->redirect($this->Auth->redirectUrl('/'));
-            // if ($this->Auth->login()) {
-            //     return $this->redirect($this->Auth->redirectUrl('/'));
-            // } else {
-            //     return $this->redirect($this->Auth->redirectUrl('/users/login?erro=error'));
-            // }
-            // $passwordHasher = new BlowfishPasswordHasher();
-            //     $this->data[$this->alias]['senha'] = $passwordHasher->hash(
-            //         $this->data[$this->alias]['senha']
-            //     );
-        }
-    }
-
-    public function add()
-    {
-        $this->layout = 'ajax';
-		$this->loadModel('User');
+        $this->layout = 'login';
 
         if ($this->request->is('post')) {
-            echo "oi";
-           /* $this->Auth->user('id');
-            $this->User->create();
-            $this->request->data = json_decode(file_get_contents('php://input'), true);
-            if ($this->User->save($this->request->data)) {
-                print_r("usuário cadastrado!");
+            // Obter os dados de email e senha do formulário
+            $email = $this->request->data['User']['email'];
+            $senha = $this->request->data['User']['senha'];
+
+            // Verificar se o usuário existe na tabela 'users' com os dados fornecidos
+            $user = $this->User->find('first', array(
+                'conditions' => array(
+                    'User.email' => $email,
+                    'User.senha' => $senha  // Não utilizar hash para a senha
+                )
+            ));
+
+            if ($user) {
+                // Se o usuário for encontrado, cria a sessão e redireciona para a página principal
+                $this->Session->write('User', $user);
+                return $this->redirect('/prontuarios');  // Redireciona para a página do usuário (exemplo)
             } else {
-                print_r("O usuário não pôde ser salvo!");
-            }*/
+                // Exibe mensagem de erro se as credenciais estiverem incorretas
+                $this->Flash->set('Usuário ou senha incorretos', array('key' => 'warning'));
+            }
         }
     }
 
-
+    // Função de logout
     public function logout()
     {
-        return $this->redirect($this->Auth->logout());
+        $this->Session->delete('User');  // Remove a sessão do usuário
+        return $this->redirect('/login');  // Redireciona para a página de login
     }
 
+    // Função de adição de novo usuário (caso tenha um formulário para isso)
+    public function add()
+    {
+        $this->layout = 'login';
+    }
+
+    // Função index (caso seja necessário)
     public function index()
     {
-        return $this->redirect($this->Auth->redirectUrl('/'));
-    }
+        // Lógica para a página principal do usuário
+    }*/
 }
