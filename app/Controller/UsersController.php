@@ -24,6 +24,7 @@ class UsersController extends AppController
         $this->layout = 'login';
 
         if ($this->request->is('post')) {
+<<<<<<< Updated upstream
             // Obter os dados de email e senha do formulário
             $email = $this->request->data['User']['email'];
             $senha = $this->request->data['User']['senha'];
@@ -43,6 +44,15 @@ class UsersController extends AppController
             } else {
                 // Exibe mensagem de erro se as credenciais estiverem incorretas
                 $this->Flash->set('Usuário ou senha incorretos', array('key' => 'warning'));
+=======
+            $this->Auth->user('id');
+            $this->User->create();
+            $this->request->data = json_decode(file_get_contents('php://input'), true);
+            if ($this->User->save($this->request->data)) {
+                print_r("usuário cadastrado!");
+            } else {
+                print_r("O usuário não pôde ser salvo!");
+>>>>>>> Stashed changes
             }
         }
     }
