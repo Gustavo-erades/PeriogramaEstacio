@@ -1,78 +1,48 @@
 <?php
 
 App::uses('AppController', 'Controller');
-
 class UsersController extends AppController
-{/*
-    public $helpers = array('Html', 'Form');
-    public $components = array(
-        'RequestHandler',
-        'Session',  // Para gerenciar a sessão do usuário
-    );
-
-    // Se você precisar permitir acesso sem login para o login e cadastro, defina aqui
-    public function beforeFilter()
-    {
-        parent::beforeFilter();
-        // Permitindo acesso aos métodos login e add sem autenticação
-        $this->Auth->allow('login', 'add');
+{ 
+    public function index() {
+        $this->layout = false;
+        $this->render('login');
+        
     }
-
-    // Função de login
-    public function login()
-    {
-        $this->layout = 'login';
-
-        if ($this->request->is('post')) {
-<<<<<<< Updated upstream
-            // Obter os dados de email e senha do formulário
-            $email = $this->request->data['User']['email'];
-            $senha = $this->request->data['User']['senha'];
-
-            // Verificar se o usuário existe na tabela 'users' com os dados fornecidos
-            $user = $this->User->find('first', array(
-                'conditions' => array(
-                    'User.email' => $email,
-                    'User.senha' => $senha  // Não utilizar hash para a senha
-                )
+    public function login(){
+        $this->layout = false;
+        if($this->request->is('post')){
+            $this->loadModel('User');
+            $senha=$this->request->data['senha'];
+            $email=$this->request->data['email'];
+            $achouRegis = $this->User->find('first', array(
+                'fields' => array('id', 'senha'),
+                'conditions' => array('User.email' => $email)
             ));
-
-            if ($user) {
-                // Se o usuário for encontrado, cria a sessão e redireciona para a página principal
-                $this->Session->write('User', $user);
-                return $this->redirect('/prontuarios');  // Redireciona para a página do usuário (exemplo)
-            } else {
-                // Exibe mensagem de erro se as credenciais estiverem incorretas
-                $this->Flash->set('Usuário ou senha incorretos', array('key' => 'warning'));
-=======
-            $this->Auth->user('id');
-            $this->User->create();
-            $this->request->data = json_decode(file_get_contents('php://input'), true);
-            if ($this->User->save($this->request->data)) {
-                print_r("usuário cadastrado!");
-            } else {
-                print_r("O usuário não pôde ser salvo!");
->>>>>>> Stashed changes
+            if(!empty($achouRegis)){
+                if(password_verify($senha, $achouRegis['User']['senha'])){
+                    // $this->autoRender = false; 
+                    // $this->response->type('json');
+                    // $this->response->body(json_encode(array('status' => 'error', 'message' => 'Usuário não encontrado.')));
+                }
             }
         }
     }
-
-    // Função de logout
-    public function logout()
-    {
-        $this->Session->delete('User');  // Remove a sessão do usuário
-        return $this->redirect('/login');  // Redireciona para a página de login
+    public function add(){
+        $this->layout=false;
+        $this->render('add');
+        if($this->request->is('post')){
+            $this->loadModel('User');
+            $data = array(
+                'User' => array(
+                    'nome' =>$this->request->data['nome'],
+                    'senha' =>password_hash($this->request->data['senha'], PASSWORD_BCRYPT),
+                    'email' =>$this->request->data['email'],
+                    'matricula' =>$this->request->data['matricula']
+                )
+            );
+            if($this->User->save($data)){
+                $this->redirect(array('action' => 'index'));
+            }
+        }
     }
-
-    // Função de adição de novo usuário (caso tenha um formulário para isso)
-    public function add()
-    {
-        $this->layout = 'login';
-    }
-
-    // Função index (caso seja necessário)
-    public function index()
-    {
-        // Lógica para a página principal do usuário
-    }*/
 }

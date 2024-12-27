@@ -18,21 +18,19 @@
                         <h1 class="display-6 mb-3">Login</h1>
                     </div>
                     <div>
-                        <form action="" id="usuarioLoginAdForm" class="needs-validation" novalidate="novalidate"
-                            method="post" accept-charset="utf-8">
-                            <div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>
+                        <div>
                             <div class="form-floating mb-3">
-                                <input name="data[User][email]" id="email"
+                                <input name="email" id="email"
                                     class="form-control shadow-sm " placeholder="E-mail" required="required" maxlength="50" type="text" />
                                 <label for="email">Email</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input name="data[User][senha]" id="senha"
+                                <input name="senha" id="senha"
                                     class="form-control shadow-sm" placeholder="Senha" required="required" type="senha" />
                                 <label for="senha">Senha</label>
                             </div>
-                            <button class="btn btn-info w-100 shadow-sm text-light">Login</button>
-                        </form>
+                            <button class="btn btn-info w-100 shadow-sm text-light" onclick="validaUser()">Login</button>
+</div>
                         <div class="mt-3">
                             <p>Não possui uma conta?
                                 <a href="http://localhost/PeriogramaEstacio/users/add">Faça seu cadastro</a>
@@ -48,7 +46,37 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <!--
+    <script src="../js/validaFormsAdd.js"></script>
+-->
     <script defer>
+
+function validaUser(){
+  var senha=$('#senha').val();
+  var email=$('#email').val();
+  if(senha != '' && email != ''){
+    data={
+        senha:senha,
+        email:email
+    }
+    $.ajax({
+        type:'POST',
+        url:'http://localhost/PeriogramaEstacio/users/login/',
+        data:data,
+        success:(resp)=>{
+            console.log('ue');
+            if(resp){
+                console.log("entrou")
+            }
+        },
+        error:()=>{
+            console.log('Erro ao fazer login!');
+        }
+    })
+  }  
+}
+
+
         var alerta = document.querySelector("#alert");
 
         function novoAlerta(texto) {

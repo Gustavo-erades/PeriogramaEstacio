@@ -50,7 +50,7 @@
                         </form>
                         <div class="mt-3">
                             <p>Já possui cadastro?
-                                <a href="http://localhost/PeriogramaEstacio/login">Faça seu login</a>
+                                <a href="http://localhost/PeriogramaEstacio/users/">Faça seu login</a>
                             </p>
                         </div>
                     </div>
