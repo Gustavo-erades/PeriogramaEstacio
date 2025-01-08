@@ -12,7 +12,6 @@
         <div class="card-body">
             <h5 class="card-title"></h5>
             <p class="card-text">
-               ]
             </p>
             <p class="card-text">
                 breve descrição da situação do paciente
@@ -21,7 +20,7 @@
                 <a href="#" class="btn btn-secondary">
                     <i class="fas fa-download"></i>
                 </a>
-                <a href="#" class="btn btn-primary">Ver prontuário</a>
+                <p class="card-view"><a href="#" class="btn btn-primary">Ver prontuário</a></p>
             </div>
         </div>
     </div>
