@@ -1,10 +1,10 @@
 <style>
     input[type='checkbox']{
-    cursor:pointer;
+    cursor:pointer;                    
   }
   .caixa_perguntas {
         /*background-color: #C8DCED;*/
-        background-color: rgba(56, 176, 227, 0.73);
+        background:rgba(79, 151, 229, 0.73);;
         border-radius: 6px;
         padding: 8px;
         margin-bottom: 20px;

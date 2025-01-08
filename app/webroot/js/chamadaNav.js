@@ -31,7 +31,7 @@ function getNovos(){
 function getNovosPacientes(){
     $.ajax({
         type:'GET',
-        url:'novosPacientes/index',
+        url:'novoPaciente/index',
         dataType:'html',
         beforeSend:()=>{
         },
