@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../img/estacioLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/loginStyle.css">
     <title>Clínicas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="container-fluid bg-info">
+    <div class="container-fluid">
         <div id="alert"></div>
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div>
@@ -29,11 +32,11 @@
                                     class="form-control shadow-sm" placeholder="Senha" required="required" type="senha" />
                                 <label for="senha">Senha</label>
                             </div>
-                            <button class="btn btn-info w-100 shadow-sm text-light" onclick="validaUser()">Login</button>
-</div>
+                            <button class="btn btn-infoPerso w-100 shadow-sm text-light" onclick="validaUser()">Login</button>
+                        </div>
                         <div class="mt-3">
                             <p>Não possui uma conta?
-                                <a href="http://localhost/PeriogramaEstacio/users/add">Faça seu cadastro</a>
+                                <a href="<?=$_SERVER['HTTP_REFERER']?>">Faça seu cadastro</a>
                             </p>
                         </div>
                     </div>
@@ -50,31 +53,31 @@
     <script src="../js/validaFormsAdd.js"></script>
 -->
     <script defer>
-
-function validaUser(){
-  var senha=$('#senha').val();
-  var email=$('#email').val();
-  if(senha != '' && email != ''){
-    data={
-        senha:senha,
-        email:email
-    }
-    $.ajax({
-        type:'POST',
-        url:'http://localhost/PeriogramaEstacio/users/login/',
-        data:data,
-        success:(resp)=>{
-            console.log('ue');
-            if(resp){
-                console.log("entrou")
+        function validaUser() {
+            var senha = $('#senha').val();
+            var email = $('#email').val();
+            if (senha != '' && email != '') {
+                data = {
+                    senha: senha,
+                    email: email
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: 'http://localhost/PeriogramaEstacio/users/login/',
+                    data: data,
+                    success: (resp) => {
+                        console.log(JSON.parse)
+                        /*const response = JSON.parse(resp); // Parse a resposta JSON
+                        if (response.success) {
+                           console.log('sda')
+                        }*/
+                    },
+                    error: () => {
+                        console.log('Erro ao fazer login!');
+                    }
+                })
             }
-        },
-        error:()=>{
-            console.log('Erro ao fazer login!');
         }
-    })
-  }  
-}
 
 
         var alerta = document.querySelector("#alert");
@@ -116,4 +119,5 @@ function validaUser(){
         })()
     </script>
 </body>
+
 </html>

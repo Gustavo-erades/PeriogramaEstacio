@@ -38,10 +38,10 @@ function cadastrarUser() {
                 url: 'http://localhost/PeriogramaEstacio/users/add/',
                 data: data,
                 success: () => {
-                    console.log('Sucesso');
+                    window.location.href='http://localhost/PeriogramaEstacio/users/';
                 },
                 error: () => {
-                    console.log("Erro ao cadastrar!")
+                    novoAlerta("Ocorreu um erro ao realizar o cadastro. Contate o administrador do sistema");
                 }
             })
         } else {
@@ -90,7 +90,6 @@ function cadastrarUser() {
         novoAlerta("Por favor, preencha todos os campos.");
     }
 }
-
 function validaUser2(){
   var senha=$('#senha').val();
   var email=$('#email').val();

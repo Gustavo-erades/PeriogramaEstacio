@@ -12,18 +12,16 @@ class UsersController extends AppController
         $this->layout = false;
         if($this->request->is('post')){
             $this->loadModel('User');
-            $senha=$this->request->data['senha'];
+            $senha=password_hash($this->request->data['senha'], PASSWORD_BCRYPT);
             $email=$this->request->data['email'];
             $achouRegis = $this->User->find('first', array(
                 'fields' => array('id', 'senha'),
-                'conditions' => array('User.email' => $email)
+                'conditions' => array('User.email' => $email,'User.senha'=>$senha)
             ));
-            if(!empty($achouRegis)){
-                if(password_verify($senha, $achouRegis['User']['senha'])){
-                    // $this->autoRender = false; 
-                    // $this->response->type('json');
-                    // $this->response->body(json_encode(array('status' => 'error', 'message' => 'Usuário não encontrado.')));
-                }
+           if(!empty($achouRegis)){
+                echo json_encode(['success' => true]);
+            } else {
+                echo json_encode(['success' => false, 'message' => 'Login ou senha incorretos']);
             }
         }
     }
@@ -40,9 +38,7 @@ class UsersController extends AppController
                     'matricula' =>$this->request->data['matricula']
                 )
             );
-            if($this->User->save($data)){
-                $this->redirect(array('action' => 'index'));
-            }
+           $this->User->save($data);
         }
     }
 }

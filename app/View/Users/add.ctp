@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../img/estacioLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/loginStyle.css">
     <title>Prontuário Estácio Cadastro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid bg-info">
+    <div class="container-fluid">
         <div id="alert"></div>
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div>
@@ -44,13 +45,13 @@
                                     placeholder="" minlength="8" required>
                                 <label for="senha">Confirme a senha Senha</label>
                             </div>
-                            <button type="button" onclick="cadastrarUser()" class="btn btn-info shadow-sm w-100 text-light">
+                            <button type="button" onclick="cadastrarUser()" class="btn btn-infoPerso shadow-sm w-100 text-light">
                                 cadastrar
                             </button>
                         </form>
                         <div class="mt-3">
                             <p>Já possui cadastro?
-                                <a href="http://localhost/PeriogramaEstacio/users/">Faça seu login</a>
+                                <a href="<?=$_SERVER['HTTP_REFERER']?>">Faça seu login</a>
                             </p>
                         </div>
                     </div>
