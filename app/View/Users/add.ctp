@@ -51,7 +51,7 @@
                         </form>
                         <div class="mt-3">
                             <p>Já possui cadastro?
-                                <a href="<?=$_SERVER['HTTP_REFERER']?>">Faça seu login</a>
+                                <a href="http://localhost/PeriogramaEstacio/users/">Faça seu login</a>
                             </p>
                         </div>
                     </div>

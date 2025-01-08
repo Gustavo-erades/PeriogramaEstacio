@@ -36,7 +36,7 @@
                         </div>
                         <div class="mt-3">
                             <p>Não possui uma conta?
-                                <a href="<?=$_SERVER['HTTP_REFERER']?>">Faça seu cadastro</a>
+                                <a href="http://localhost/PeriogramaEstacio/users/add">Faça seu cadastro</a>
                             </p>
                         </div>
                     </div>

@@ -1,9 +1,10 @@
 .container-fluid {
-    background-color: #4F85B1;
+    background-image: linear-gradient(-150deg, #378ae2e0 0%, #1e4bc8 100%);
    
 }
 button.btn-infoPerso {
-    background-color: #4F85B1;
+    background-image: linear-gradient(-150deg, #378ae2e0 0%, #1e4bc8 100%);
+    font-weight: bold;
 }
 button.btn-infoPerso:hover,
 button.btn-infoPerso:active,
