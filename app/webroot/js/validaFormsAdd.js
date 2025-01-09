@@ -90,24 +90,24 @@ function cadastrarUser() {
         novoAlerta("Por favor, preencha todos os campos.");
     }
 }
-function validaUser2(){
-  var senha=$('#senha').val();
-  var email=$('#email').val();
-  if(senha != '' && email != ''){
-    data={
-        senha:senha,
-        email:email
-    }
-    $.ajax({
-        type:'POST',
-        url:'http://localhost/PeriogramaEstacio/users/login/',
-        data:data,
-        success:()=>{
-            console.log('Sucesso');
-        },
-        error:()=>{
-            console.log('Erro ao fazer login!');
-        }
-    })
-  }  
-}
+// function validaUser2(){
+//   var senha=$('#senha').val();
+//   var email=$('#email').val();
+//   if(senha != '' && email != ''){
+//     data={
+//         senha:senha,
+//         email:email
+//     }
+//     $.ajax({
+//         type:'POST',
+//         url:'http://localhost/PeriogramaEstacio/users/login/',
+//         data:data,
+//         success:()=>{
+//             console.log('Sucesso');
+//         },
+//         error:()=>{
+//             console.log('Erro ao fazer login!');
+//         }
+//     })
+//   }  
+// }
