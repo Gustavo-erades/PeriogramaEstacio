@@ -65,17 +65,19 @@
                     type: 'POST',
                     url: 'http://localhost/PeriogramaEstacio/users/login/',
                     data: data,
-                    success: (resp) => {
-                        console.log(JSON.parse)
-                        /*const response = JSON.parse(resp); // Parse a resposta JSON
+                    dataType: 'json', 
+                    success: function(response) {
                         if (response.success) {
-                           console.log('sda')
-                        }*/
+                            window.location.href = 'http://localhost/PeriogramaEstacio/';
+                        } else {
+                            novoAlerta("Credenciais incorretas, tente novamente.");
+                        }
                     },
                     error: () => {
                         console.log('Erro ao fazer login!');
                     }
-                })
+                });
+
             }
         }
 
