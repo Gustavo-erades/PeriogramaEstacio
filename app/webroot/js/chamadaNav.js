@@ -45,7 +45,7 @@ function getNovosPacientes(){
 }
 $('#navProntuario').on('click',getProntuarios);
 $('#navNovo').on('click',getNovos);
-$('#navNovoPaciente').on('click',getNovosPacientes)
+$('#navNovoPaciente').on('click',getNovosPacientes);
 $(document).ready(function() {
     $('#linkLogo').on('click', function(event) {
         event.preventDefault(); 

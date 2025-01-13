@@ -1,25 +1,27 @@
 <?php
 App::uses('Controller', 'Controller');
 
-class AppController extends Controller {
-        /*public function beforeFilter() {
-            $user = $this->Session->read('Auth.User');
-            $currentController = $this->params['controller'];
-            $currentAction = $this->params['action'];
-    
-            if ($user) {
-                if ($currentController !== 'prontuarios' || $currentAction !== 'index') {
-                    $this->redirect('http://' . $_SERVER['HTTP_HOST']);
-                }
-            } else {
-                if ($currentController !== 'users' || $currentAction !== 'add') {
-                if ($currentController !== 'users' || $currentAction !== 'index') {
-                    $this->redirect('http://' . $_SERVER['HTTP_HOST'] . '/PeriogramaEstacio/users/');
-                }
-            }
-            }
-        }
-        public $components = array('Session');*/
+class AppController extends Controller
+{
+   
+    public $components = array(
+        'Auth' => array(
+            'loginRedirect' => array(
+                'controller' => 'prontuarios',
+                'action' => '/index'
+            ),
+            'logoutRedirect' => array(
+                'controller' => 'users',
+                'action' => '/index'
+            ),
+            'loginAction' => array(  
+                'controller' => 'users',
+                'action' => 'index/'
+            )
+        )
+    );
 
-    
+    public function beforeFilter() {
+        $this->Auth->allow('index','login', 'add');
+    }
 }

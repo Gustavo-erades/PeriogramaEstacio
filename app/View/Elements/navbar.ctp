@@ -30,7 +30,7 @@
             <a id="navNovoPaciente" class="nav-link" href="#">Novo Paciente<img src="./img/pessoa.png"></a>
           </li>
           <li class="nav-item">
-            <a id="navSair" class="nav-link" href="#">Sair<img src="./img/porta.png" width="30px"></a>
+            <a id="navSair" class="nav-link" href="users/logout">Sair<img src="./img/porta.png" width="30px"></a>
           </li>
         </ul>
       </div>

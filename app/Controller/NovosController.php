@@ -8,6 +8,16 @@
         public function index(){
 
         }
+
+        public function add(){
+            $this->layout=false;
+            $this->autoRender = false; 
+            if($this->request->is('post')){
+                echo "<pre>";
+                print_r($this->request->data);
+                echo "</pre>";
+            }
+        }
     }
 
 ?>
