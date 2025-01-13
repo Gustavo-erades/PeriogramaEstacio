@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,13 +67,19 @@
                     dataType: 'json', 
                     success: function(response) {
                         if (response.success) {
-                            window.location.href = 'http://localhost/PeriogramaEstacio/';
+                            window.location.href = response.redirectUrl;
                         } else {
+                            $('#senha').val('');
+                            $('#email').val('');
                             novoAlerta("Credenciais incorretas, tente novamente.");
                         }
                     },
-                    error: () => {
-                        console.log('Erro ao fazer login!');
+                    error: (xhr, status, error) => {
+                        $('#senha').val('');
+                        $('#email').val('');
+                        novoAlerta('Erro ao fazer login!');
+                        console.error('Erro no AJAX: ', status, error);
+        console.error('Resposta completa: ', xhr.responseText);
                     }
                 });
 

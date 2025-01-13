@@ -10,5 +10,5 @@
         </div>
     </div>
     <!-- salva os dados do prontuário -->
-    <button class="button-43" role="button" onclick="enviaProntuario()">Salvar</button>
+    <button class="button-43" role="button" onclick="enviaProntuario()" id="salvarNovoPront">Salvar</button>
 </div>
