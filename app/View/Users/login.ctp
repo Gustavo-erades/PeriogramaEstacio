@@ -28,7 +28,7 @@
                             </div>
                             <div class="form-floating mb-3">
                                 <input name="senha" id="senha"
-                                    class="form-control shadow-sm" placeholder="Senha" required="required" type="senha" />
+                                    class="form-control shadow-sm" placeholder="Senha" required="required" type="password" />
                                 <label for="senha">Senha</label>
                             </div>
                             <button class="btn btn-infoPerso w-100 shadow-sm text-light" onclick="validaUser()">Login</button>
