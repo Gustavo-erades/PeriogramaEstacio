@@ -9,6 +9,4 @@
             <textarea name="observacoes" class="editorOdonto" id="oservacoes"></textarea>
         </div>
     </div>
-    <!-- salva os dados do prontuário -->
-    <button class="button-43" role="button" onclick="enviaProntuario()" id="salvarNovoPront">Salvar</button>
 </div>
