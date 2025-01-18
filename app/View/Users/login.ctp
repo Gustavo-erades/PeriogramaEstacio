@@ -37,6 +37,9 @@
                             <p>Não possui uma conta?
                                 <a href="http://localhost/PeriogramaEstacio/users/add">Faça seu cadastro</a>
                             </p>
+                            <p>Esqueceu a senha?
+                                <a href="#">Recuperar senha</a>
+                            </p>
                         </div>
                     </div>
                 </div>

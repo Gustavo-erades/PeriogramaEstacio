@@ -31,7 +31,7 @@ function getNovos(){
 function getNovosPacientes(){
     $.ajax({
         type:'GET',
-        url:'novoPaciente/index',
+        url:'novosPacientes/index',
         dataType:'html',
         beforeSend:()=>{
         },
@@ -39,7 +39,7 @@ function getNovosPacientes(){
             $("#mainContent").html(data);
         },
         error:()=>{
-            console.log("erro ao carregar novos prontuários");
+            console.log("erro ao carregar novos pacientes");
         }
     })
 }
