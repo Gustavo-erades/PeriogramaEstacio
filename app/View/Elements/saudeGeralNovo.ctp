@@ -307,40 +307,28 @@
     <div class="caixa_perguntas">
         <!-- CKEditor para perguntas abertas -->
         <div class="mb-3">
-    
             <label for="doencaContagiosa" class="mb-2 text-light">Já teve alguma doença contagiosa? Se <b>SIM</b> qual?</label>
-            <textarea name="data[conteudo]" class="editor" id="doencaContagiosa"></textarea>
+            <textarea name="doencaContagiosa" class="editorOdonto" id="doencaContagiosa"></textarea>
         </div>
         <div class="mb-3">
             <label for="alergia" class="mb-2 text-light">Tem alergia a algum medicamento? Se <b>SIM</b> qual?</label>
-            <textarea name="data[conteudo]" class="editor" id="alergia"></textarea>
+            <textarea name="alergia" class="editorOdonto" id="alergia"></textarea>
         </div>
         <div class="mb-3">
             <label for="bebida" class="mb-2 text-light">Ingere bebida alcoólica? Se <b>SIM</b> com qual frequência?</label>
-            <textarea name="data[conteudo]" class="editor" id="bebida"></textarea>
+            <textarea name="bebida" class="editorOdonto" id="bebida"></textarea>
         </div>
         <div class="mb-3">
             <label for="drogas" class="mb-2 text-light">Já usou drogas ilícitas? Se <b>SIM</b> qual e por quanto tempo?</label>
-            <textarea name="data[conteudo]" class="editor" id="drogas"></textarea>
+            <textarea name="drogas" class="editorOdonto" id="drogas"></textarea>
         </div>
         <div class="mb-3">
             <label for="medicamento" class="mb-2 text-light">Está tomando algum medicamento? Se <b>SIM</b> quais?</label>
-            <textarea name="data[conteudo]" class="editor" id="medicamento"></textarea>
+            <textarea name="medicamento" class="editorOdonto" id="medicamento"></textarea>
         </div>
         <div class="mb-3">
             <label for="fumar" class="mb-2 text-light">Se <b>PAROU</b> de fumar, por quanto tempo fumou, quantidade/dias e há quanto tempo parou?</label>
-            <textarea name="data[conteudo]" class="editor" id="fumar"></textarea>
+            <textarea name="fumar" class="editorOdonto" id="fumar"></textarea>
         </div>
     </div>
 </div>
-<script>
-    document.querySelectorAll('.editor').forEach(function(editorElement) {
-        ClassicEditor
-            .create(editorElement, {
-                toolbar: ['bold', 'italic', 'link', 'undo', 'redo', 'bulletedList', 'numberedList', 'blockQuote']
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    });
-</script>

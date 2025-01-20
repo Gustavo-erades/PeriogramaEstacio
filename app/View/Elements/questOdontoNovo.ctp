@@ -3,8 +3,7 @@
     cursor:pointer;                    
   }
   .caixa_perguntas {
-        /*background-color: #C8DCED;*/
-        background:rgba(79, 151, 229, 0.73);;
+        background:rgba(79, 151, 229, 0.73);
         border-radius: 6px;
         padding: 8px;
         margin-bottom: 20px;
@@ -83,7 +82,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-3">
                 <div class="checkbox-wrapper-61">
-                    <input type="checkbox" class="check" id="mobilidade2" name="mobilidade" />
+                    <input type="checkbox" class="check" id="mobilidade2" name="mobilidade2" />
                     <label for="mobilidade2" class="label">
                         <span>Possui mobilidade nos dentes com quente/frio?</span>
                         <svg width="45" height="45" viewbox="0 0 95 95">
@@ -279,27 +278,15 @@
         <!-- CKEditor para perguntas abertas -->
         <div class="mb-3">
             <label for="implante" class="mb-2 text-light">Já realizou implantes dentários? Se <b>SIM</b> como foi sua experiência?</label>
-            <textarea name="data[conteudo]" class="editorOdonto" id="implante"></textarea>
+            <textarea name="implante" class="editorOdonto" id="implante"></textarea>
         </div>
         <div class="mb-3">
             <label for="tratOdonto" class="mb-2 text-light">Quanto tempo tem seu último tratamento odontológico?</label>
-            <textarea name="data[conteudo]" class="editorOdonto" id="tratOdonto"></textarea>
+            <textarea name="tratOdonto" class="editorOdonto" id="tratOdonto"></textarea>
         </div>
         <div class="mb-3">
             <label for="sorriso" class="mb-2 text-light">O que o/a incomoda em seu sorriso?</label>
-            <textarea name="data[conteudo]" class="editorOdonto" id="sorriso"></textarea>
+            <textarea name="sorriso" class="editorOdonto" id="sorriso"></textarea>
         </div>
     </div>
 </div>
-
-<script>
-    document.querySelectorAll('.editorOdonto').forEach(function(editorElement) {
-        ClassicEditor
-            .create(editorElement, {
-                toolbar: ['bold', 'italic', 'link', 'undo', 'redo', 'bulletedList', 'numberedList', 'blockQuote']
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    });
-</script>

@@ -15,6 +15,9 @@
                 echo "<pre>";
                 print_r($this->request->data);
                 echo "</pre>";
+                echo "<pre>";
+                print_r($_POST);
+                echo "</pre>";
                 exit;
             
         }
