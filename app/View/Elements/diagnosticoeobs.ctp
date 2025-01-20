@@ -6,7 +6,7 @@
         </div>
         <div class="mb-3">
             <label for="observacoes" class="mb-2 text-light">Observações</label>
-            <textarea name="observacoes" class="editorOdonto" id="oservacoes"></textarea>
+            <textarea name="observacoes" class="editorOdonto" id="observacoes"></textarea>
         </div>
     </div>
 </div>
