@@ -1,6 +1,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+<<<<<<< Updated upstream
     /* Estilo do switch */
     .switch {
         position: relative;
@@ -9,6 +10,131 @@
         /* largura do switch */
         height: 34px;
         /* altura do switch */
+=======
+body {
+    background: #000 url('../img/imgTeste2.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Poppins", serif;
+    color: rgb(255, 255, 255); /* Define o texto padrão como branco */
+}
+h1.display-4 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white; /* Garante que o título seja branco */
+    font-family: "Poppins", serif;
+}
+/* Estilo do switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    /* largura do switch */
+    height: 34px;
+    /* altura do switch */
+}
+
+.switch input {
+    opacity: 0;
+    /* torna o checkbox invisível */
+    width: 0;
+    height: 0;
+}
+
+/* O slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    /* cor do fundo */
+    border-radius: 34px;
+    /* bordas arredondadas */
+    transition: 0.4s;
+    /* transição suave */
+}
+
+/* O círculo dentro do switch */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    /* altura do círculo */
+    width: 26px;
+    /* largura do círculo */
+    left: 4px;
+    /* posição inicial */
+    bottom: 4px;
+    /* posição inicial */
+    background-color: white;
+    /* cor do círculo */
+    border-radius: 50%;
+    /* deixa redondo */
+    transition: 0.4s;
+    /* transição suave */
+}
+
+/* Quando o checkbox está marcado */
+input:checked + .slider {
+    background-color: #2196f3;
+    /* cor do fundo quando ativo */
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    /* move o círculo para a direita */
+}
+.text-center {
+    font-family: "Poppins", serif;
+    text-align: center;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 18px;
+}
+/*permite o redimensionamento do textarea com o ckeditor*/
+.editor {
+    resize: both;
+    overflow: auto;
+}
+.caixa_perguntas {
+    background-color: #38b0e370;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-style: #ffffff;
+}
+/* estilo para botão de salvar */
+.button-43 {
+    background-image: linear-gradient(-180deg, #378ae2e0 0%, #1e4bc8d9 100%);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 1.1em;
+    font-weight: "bold";
+    justify-content: center;
+    padding: 1rem 1.35rem;
+    text-decoration: none;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-43:hover {
+    background-image: linear-gradient(-180deg, #1e4bc8d9 0%, #17759c 100%);
+}
+
+@media (min-width: 768px) {
+    .button-43 {
+        padding: 1rem 2rem;
+>>>>>>> Stashed changes
     }
 
     .switch input {
