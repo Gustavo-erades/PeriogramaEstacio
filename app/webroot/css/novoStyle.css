@@ -1,16 +1,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-<<<<<<< Updated upstream
-    /* Estilo do switch */
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        /* largura do switch */
-        height: 34px;
-        /* altura do switch */
-=======
 body {
     background: #000 url('../img/imgTeste2.png') no-repeat center center fixed;
     background-size: cover;
@@ -130,12 +120,10 @@ input:checked + .slider:before {
 .button-43:hover {
     background-image: linear-gradient(-180deg, #1e4bc8d9 0%, #17759c 100%);
 }
-
-@media (min-width: 768px) {
-    .button-43 {
+    
+.button-43 {
         padding: 1rem 2rem;
->>>>>>> Stashed changes
-    }
+}
 
     .switch input {
         opacity: 0;
@@ -278,4 +266,4 @@ input:checked + .slider:before {
 
         input[type='checkbox']{
             cursor:pointer;
-          }
+        }
