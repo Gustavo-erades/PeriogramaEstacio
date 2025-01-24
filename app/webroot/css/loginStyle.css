@@ -1,9 +1,9 @@
 body {
-    background: #000 url("../img/imgTeste2.png") no-repeat center center fixed;
+    background: #ffffff url("../img/backgroundPadrao.png") no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
-}
+}/*
 body::after {
     content: '';
     background-color: rgba(0, 0, 0, 0.45);
@@ -14,10 +14,7 @@ body::after {
     top: 0;
     opacity: 0.8;
     z-index: -1; 
-  }
-/* .container-fluid {
-    background-image: linear-gradient(-150deg, #378ae2e0 0%, #1e4bc8 100%);
-} */
+  }/*
 button.btn-infoPerso {
     background-image: linear-gradient(-150deg, #378ae2e0 0%, #1e4bc8 100%);
     font-weight: bold;
@@ -26,4 +23,4 @@ button.btn-infoPerso:hover,
 button.btn-infoPerso:active,
 button.btn-infoPerso:focus {
     background-color: #344f65;
-}
+}*/
