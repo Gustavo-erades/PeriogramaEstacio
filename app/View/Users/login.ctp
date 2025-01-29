@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,33 +14,42 @@
 <body>
     <div class="container-fluid">
         <div id="alert"></div>
-        <div class="d-flex justify-content-center align-items-center vh-100">
-            <div>
-                <div style="width:30em;padding:20px" class="card shadow-lg">
-                    <div>
-                        <h1 class="display-6 mb-3">Login</h1>
-                    </div>
-                    <div>
+        <div class="vh-100">
+            <div class="d-flex justify-content-center mt-5 mb-5">
+                <img src="../img/estacio-logo.png" width="123" height="99">
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                    <div style="width:30em;padding:20px" style="background-color:rgba(0,0,0,0,);">
                         <div>
-                            <div class="form-floating mb-3">
-                                <input name="email" id="email"
-                                    class="form-control shadow-sm " placeholder="E-mail" required="required" maxlength="50" type="text" />
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input name="senha" id="senha"
-                                    class="form-control shadow-sm" placeholder="Senha" required="required" type="password" />
-                                <label for="senha">Senha</label>
-                            </div>
-                            <button class="btn btn-infoPerso w-100 shadow-sm text-light" onclick="validaUser()">Login</button>
+                            <h1 class="text-center mb-3" style="color:#0D5B6C;font-weight:bold">Login</h1>
                         </div>
-                        <div class="mt-3">
-                            <p>Não possui uma conta?
-                                <a href="http://localhost/PeriogramaEstacio/users/add">Faça seu cadastro</a>
-                            </p>
-                            <p>Esqueceu a senha?
-                                <a href="#">Recuperar senha</a>
-                            </p>
+                        <div>
+                            <div>
+                                <div class="form-floating mb-3">
+                                    <input name="email" id="email"
+                                        class="form-control form-control-lg shadow-sm " placeholder="E-mail" required="required" maxlength="50" type="text" style="border-radius:10px;" />
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input name="senha" id="senha"
+                                        class="form-control form-control-lg shadow-sm" placeholder="Senha" required="required" type="password" style="border-radius:10px;" />
+                                    <label for="senha">Senha</label>
+                                </div>
+                                <button class="btn btn-infoPerso w-100 shadow-sm text-light p-2" style="background-color: #0D5B6C;font-weight:bold;font-size:1.3em;border-radius:10px;" onclick="validaUser()">Log in</button>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 mb-0">
+                                <!--
+                                    <p>Não possui uma conta?
+                                        <a href="http://localhost/PeriogramaEstacio/users/add">Faça seu cadastro</a>
+                                    </p>
+                                -->
+                                <p class="text-secondary">Esqueceu a senha?</p>
+                                
+                            </div>
+                            <div class="d-flex justify-content-center mt-0">
+                                <a href="#" class="link-opacity-100">Recuperar senha</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,7 +77,7 @@
                     type: 'POST',
                     url: 'http://localhost/PeriogramaEstacio/users/login/',
                     data: data,
-                    dataType: 'json', 
+                    dataType: 'json',
                     success: function(response) {
                         if (response.success) {
                             window.location.href = response.redirectUrl;
@@ -82,7 +92,7 @@
                         $('#email').val('');
                         novoAlerta('Erro ao fazer login!');
                         console.error('Erro no AJAX: ', status, error);
-        console.error('Resposta completa: ', xhr.responseText);
+                        console.error('Resposta completa: ', xhr.responseText);
                     }
                 });
 

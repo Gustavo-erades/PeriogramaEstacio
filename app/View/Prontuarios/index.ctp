@@ -4,7 +4,7 @@
 <div class="input-group input-group-lg mt-3">
     <input type="text" class="form-control" placeholder="Procurar prontuário">
     <span class="input-group-text" id="basic-addon2">
-        <i class="fas fa-search"></i>
+        <i class="fas fa-search text-light"></i>
     </span>
 </div>
 <div>
@@ -18,10 +18,10 @@
                 breve descrição da situação do paciente
             </p>
             <div>
-                <a href="#" class="btn btn-secondary">
+                <a href="#" class="btn btn-light">
                     <i class="fas fa-download"></i>
                 </a>
-                <a href="#" class="btn btn-primary">Ver prontuário</a>
+                <a href="#" class="btn btn-novaCor">Ver prontuário</a>
             </div>
         </div>
     </div>
