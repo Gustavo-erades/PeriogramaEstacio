@@ -30,7 +30,9 @@
   }
 
 .navbar-toggler {
-    background-color: #204FC8;
+    /* background-color: #204FC8; */
+    background-color: #0D5B6C;
+    color:#fff;
     padding: 10px 15px;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -100,7 +102,7 @@
 }
 
 .offcanvas {
-  background-image: linear-gradient(-180deg, #378ae2e0 0%, #1e4bc8d9 100%);
+  background-image: linear-gradient(-180deg, #e23737e0 0%, #1e4bc8d9 100%);
   color: white;
 }
 
