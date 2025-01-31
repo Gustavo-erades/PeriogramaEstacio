@@ -1,7 +1,7 @@
 <style>
     .caixa_perguntas {
         /*background-color: #C8DCED;*/
-        background-color:rgba(56, 176, 227, 0.73);
+        background:rgba(119, 119, 119, 0.35);
         border-radius: 6px;
         padding: 8px;
         margin-bottom: 20px;
@@ -307,27 +307,27 @@
     <div class="caixa_perguntas">
         <!-- CKEditor para perguntas abertas -->
         <div class="mb-3">
-            <label for="doencaContagiosa" class="mb-2 text-light">Já teve alguma doença contagiosa? Se <b>SIM</b> qual?</label>
+            <label for="doencaContagiosa" class="mb-2 text-dark">Já teve alguma doença contagiosa? Se <b>SIM</b> qual?</label>
             <textarea name="doencaContagiosa" class="editorOdonto" id="doencaContagiosa"></textarea>
         </div>
         <div class="mb-3">
-            <label for="alergia" class="mb-2 text-light">Tem alergia a algum medicamento? Se <b>SIM</b> qual?</label>
+            <label for="alergia" class="mb-2 text-dark">Tem alergia a algum medicamento? Se <b>SIM</b> qual?</label>
             <textarea name="alergia" class="editorOdonto" id="alergia"></textarea>
         </div>
         <div class="mb-3">
-            <label for="bebida" class="mb-2 text-light">Ingere bebida alcoólica? Se <b>SIM</b> com qual frequência?</label>
+            <label for="bebida" class="mb-2 text-dark">Ingere bebida alcoólica? Se <b>SIM</b> com qual frequência?</label>
             <textarea name="bebida" class="editorOdonto" id="bebida"></textarea>
         </div>
         <div class="mb-3">
-            <label for="drogas" class="mb-2 text-light">Já usou drogas ilícitas? Se <b>SIM</b> qual e por quanto tempo?</label>
+            <label for="drogas" class="mb-2 text-dark">Já usou drogas ilícitas? Se <b>SIM</b> qual e por quanto tempo?</label>
             <textarea name="drogas" class="editorOdonto" id="drogas"></textarea>
         </div>
         <div class="mb-3">
-            <label for="medicamento" class="mb-2 text-light">Está tomando algum medicamento? Se <b>SIM</b> quais?</label>
+            <label for="medicamento" class="mb-2 text-dark">Está tomando algum medicamento? Se <b>SIM</b> quais?</label>
             <textarea name="medicamento" class="editorOdonto" id="medicamento"></textarea>
         </div>
         <div class="mb-3">
-            <label for="fumar" class="mb-2 text-light">Se <b>PAROU</b> de fumar, por quanto tempo fumou, quantidade/dias e há quanto tempo parou?</label>
+            <label for="fumar" class="mb-2 text-dark">Se <b>PAROU</b> de fumar, por quanto tempo fumou, quantidade/dias e há quanto tempo parou?</label>
             <textarea name="fumar" class="editorOdonto" id="fumar"></textarea>
         </div>
     </div>

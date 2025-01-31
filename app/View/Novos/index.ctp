@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/novoStyle.css">
 <div class="mt-3">
-    <h1 class="display-4">Prontuários</h1>
-    <h4 class="text-align-right text-light" style="font-weight:bold">
+    <h1 class="display-4" style="color:#0D5B6C;">Prontuários</h1>
+    <h4 class="text-align-right" style="font-weight:bold;color:#0D5B6C">
         <?php 
             date_default_timezone_set('America/Sao_Paulo');
             echo date('d/m/Y');
