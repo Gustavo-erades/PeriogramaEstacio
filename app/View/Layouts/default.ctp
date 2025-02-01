@@ -53,7 +53,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<script src="js/chamadaNav.js"></script>
 	<script src="js/enviaProntuario.js"></script>
-	<script src="js/app_chamadas.js"></script>
+	<script src="js/appChamadas.js"></script>
 </body>
 
 </html>
