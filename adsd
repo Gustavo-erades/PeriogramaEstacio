@@ -1,0 +1,252 @@
+[33mcommit cae4b97752b118641194d67574667a0bf152561c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mgustavo[m[33m, [m[1;31morigin/gustavo[m[33m)[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Thu Jan 30 22:10:08 2025 -0300
+
+    css as pressas para vídeo
+
+[33mcommit b9615deff7dfe2775bc6c047740839e9d8d70329[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: fdd5533 639c57e
+Author: Gustavo Êrades Vilarinho Silva <108373134+Gustavo-erades@users.noreply.github.com>
+Date:   Wed Jan 29 00:01:18 2025 -0300
+
+    Merge pull request #7 from Gustavo-erades/gustavo
+    
+    Gustavo
+
+[33mcommit 639c57e3e674495cbc1e2e6aca4a97c89247e0ef[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Tue Jan 28 23:57:32 2025 -0300
+
+    tela de novos prontuários de volta, o css tem que ser ajustado
+
+[33mcommit c719226b13401c7a7d898010d1920528f339a2bb[m
+Merge: f618100 fdd5533
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Sat Jan 25 14:04:04 2025 -0300
+
+    Merge branch 'main' of https://github.com/Gustavo-erades/PeriogramaEstacio into gustavo
+
+[33mcommit f618100a27b1dc200993cecf9e00f9c6c5ebf6d3[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Fri Jan 24 01:11:18 2025 -0300
+
+    tela de login 2
+
+[33mcommit fdd55333890b8b4a1ea3869e6be69ca0237c4890[m
+Merge: ea6de45 8c991d0
+Author: Gustavo Êrades Vilarinho Silva <108373134+Gustavo-erades@users.noreply.github.com>
+Date:   Mon Jan 20 01:14:25 2025 -0300
+
+    Merge pull request #6 from Gustavo-erades/gustavo
+    
+    ajustes feitos, tela de novos usuários construida, iniciando captura …
+
+[33mcommit 8c991d01fba8647a1b0d0fe2ec7832e867ffca8e[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Mon Jan 20 01:13:28 2025 -0300
+
+    ajustes feitos, tela de novos usuários construida, iniciando captura de dados do CKEDITOR
+
+[33mcommit ea6de45f82c5d8879504837315b9877cc179c7d2[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 3844ca2 3e65a67c
+Author: Gustavo Êrades Vilarinho Silva <108373134+Gustavo-erades@users.noreply.github.com>
+Date:   Sat Jan 18 15:02:06 2025 -0300
+
+    Merge pull request #5 from Gustavo-erades/gustavo
+    
+    tela de novos pacientes colocada e ajuste no forms de novos prontuários
+
+[33mcommit 3e65a67ce4b470ce4905a87b2ab9a11af51f92f8[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Sat Jan 18 14:59:42 2025 -0300
+
+    tela de novos pacientes colocada e ajuste no forms de novos prontuários
+
+[33mcommit 3844ca29d05c86e5eed9db8fbaf1f73d984de6b8[m
+Merge: 85038dc ad9d175
+Author: Gustavo Êrades Vilarinho Silva <108373134+Gustavo-erades@users.noreply.github.com>
+Date:   Wed Jan 15 00:03:35 2025 -0300
+
+    Merge pull request #4 from Gustavo-erades/gustavo
+    
+    ajustes
+
+[33mcommit ad9d175b8954b3c67c87803cd791b05a49f7bd6a[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Wed Jan 15 00:02:32 2025 -0300
+
+    ajustes
+
+[33mcommit 85038dc56981486e42ac3651b144799c228861fc[m
+Merge: 29b425b dd1f4ad
+Author: Gustavo Êrades Vilarinho Silva <108373134+Gustavo-erades@users.noreply.github.com>
+Date:   Mon Jan 13 00:16:21 2025 -0300
+
+    Merge pull request #3 from Gustavo-erades/gustavo
+    
+    login e cadastro funcionando 100%
+
+[33mcommit dd1f4adf9330efc76e1143bf3ce52ad6ac8f15f7[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Mon Jan 13 00:10:15 2025 -0300
+
+    login e cadastro funcionando 100%
+
+[33mcommit 29b425b900f39083c1675287c507d9bc0d2e015e[m
+Merge: 2632d47 38bae88
+Author: Gustavo Êrades Vilarinho Silva <108373134+Gustavo-erades@users.noreply.github.com>
+Date:   Thu Jan 9 00:29:39 2025 -0300
+
+    Merge pull request #2 from Gustavo-erades/gustavo
+    
+    ajustes e alterações
+
+[33mcommit 38bae889b5583088253060953d7be68908a355a5[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Thu Jan 9 00:27:31 2025 -0300
+
+    ajustando login
+
+[33mcommit e6c2f7a2bb3dc26f08e8af37446414733ff8ca9b[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Wed Jan 8 22:39:09 2025 -0300
+
+    ajustes e alterações
+
+[33mcommit 2632d4791f888ca022d48e09a2392e805381707c[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Wed Jan 8 20:30:09 2025 -0300
+
+    ajustes de cores
+
+[33mcommit bcd5abc83a2ff854120d888e85dec47342f17938[m
+Merge: 3714699 e834cbb
+Author: Gustavo Êrades Vilarinho Silva <108373134+Gustavo-erades@users.noreply.github.com>
+Date:   Wed Jan 8 20:17:53 2025 -0300
+
+    Merge pull request #1 from Gustavo-erades/fazendobeck
+    
+    Fazendobeck
+
+[33mcommit e834cbb9b2cec1dc76a42a721cfd369e38a0203a[m[33m ([m[1;31morigin/fazendobeck[m[33m)[m
+Merge: aa1a39a 3714699
+Author: Gustavo Êrades Vilarinho Silva <108373134+Gustavo-erades@users.noreply.github.com>
+Date:   Wed Jan 8 20:17:42 2025 -0300
+
+    Merge branch 'main' into fazendobeck
+
+[33mcommit aa1a39a39f208e396d9c9c8bbe7551c72365a804[m
+Author: coddeqs <coddeqs@gmail.com>
+Date:   Wed Jan 8 19:28:40 2025 -0300
+
+    Repaginação_design
+
+[33mcommit bf5fd942dadbe66921094fe46688203b3030cf23[m
+Author: coddeqs <coddeqs@gmail.com>
+Date:   Mon Jan 6 19:13:21 2025 -0300
+
+    Fazendo_parte_do_back
+
+[33mcommit 371469939f4cf8d91ec23234c717fc2481642d43[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Mon Jan 6 18:41:30 2025 -0300
+
+    testes no login
+
+[33mcommit feea4f3ad2b28d665d217d333228301b13001983[m[33m ([m[1;32mgustavoerades[m[33m)[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Fri Dec 27 00:22:23 2024 -0300
+
+    vamos resolver saporra!!
+
+[33mcommit 78c86baa734e149a8d5d7577ebb7c325030d69fc[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Thu Dec 26 20:54:21 2024 -0300
+
+    vamos resolver saporra!!
+
+[33mcommit 6c30ce400fb352e7283b4786973fde0ce88b2d18[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Fri Dec 20 00:38:39 2024 -0300
+
+    não está funcionando, quebrei o código
+
+[33mcommit d8cbdfbebc9c85469b35246b4acdd6b450a2c9b7[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Wed Dec 18 15:08:28 2024 -0300
+
+    tabelas do bd
+
+[33mcommit 5316745f72dd6af320eb00cf5025070969c1974b[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Wed Dec 18 15:06:03 2024 -0300
+
+    banco de dados
+
+[33mcommit d4018437f4bffdfa7acc7dded90758491633ae80[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Wed Dec 18 00:11:35 2024 -0300
+
+    alterações
+
+[33mcommit d9461a6ef7a4cc886013554f01d75ca1c6dfbb98[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Wed Dec 18 00:07:47 2024 -0300
+
+    login e cadastro
+
+[33mcommit 02b9a58f609cf9f29a89f4b29a02d5c7c9ce72ae[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Mon Dec 16 23:57:24 2024 -0300
+
+    alterações na tela, carregamento e mais campos no prontuário
+
+[33mcommit 8859fbab81c42f7561958887dd303a6ba8606383[m
+Author: coddeqs <coddeqs@gmail.com>
+Date:   Mon Dec 16 20:11:44 2024 -0300
+
+    Telas princípio do projeto
+    
+    Telas princípio do projeto
+
+[33mcommit 648f43b7c6c9ad4a7d5fd1b4da95a62322387f64[m
+Author: coddeqs <coddeqs@gmail.com>
+Date:   Mon Dec 16 20:04:48 2024 -0300
+
+    Fazendo estilização/corrigindo bugs
+    
+    Fazendo estilização/corrigindo bugs
+
+[33mcommit 5edcbe9cb3ed7fab720b8e49cd6c6019c2daa685[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Mon Dec 16 17:15:59 2024 -0300
+
+    últimas alterações
+
+[33mcommit 099ed2f4293cddeff2c7ad3bb0f40f65c879332c[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Sun Dec 15 22:36:04 2024 -0300
+
+    +alterações
+
+[33mcommit ded54344b2ea0dc716cea3a938357074bc87e40a[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Fri Dec 13 00:08:39 2024 -0300
+
+    ajustes no botão de salvar e no botão de home
+
+[33mcommit ed1be49f8147da09e7c832e8e5d7fb0dca96f748[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Thu Dec 12 21:19:23 2024 -0300
+
+    alterações
+
+[33mcommit 4eedd3ab19df524c7176ba79ad63dfeefeb89fb5[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Thu Dec 12 20:25:29 2024 -0300
+
+    ajustes no checkbox
+
+[33mcommit 8fc34a859256a2460353f88a1f3e1deca421078c[m
+Author: Gustavo-erades <eradesvilarinho@gmail.com>
+Date:   Sun Dec 8 15:
