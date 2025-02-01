@@ -30,7 +30,6 @@
   }
 
 .navbar-toggler {
-    /* background-color: #204FC8; */
     background-color: #0D5B6C;
     color:#fff;
     padding: 10px 15px;
@@ -67,7 +66,7 @@
 .nav-link {
     font-family: 'Poppins', serif;
     font-style: normal;
-    color: #ffffff;
+    color: #0D5B6C;
     font-size: 22px;
     font-weight: bold;
     display: flex;
@@ -76,7 +75,7 @@
     padding: 20px 22px;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: #4e95e4;
+    background-color: #ffffff;
     transition: all 0.3s ease;
   }
 
@@ -86,13 +85,13 @@
 }
 
 .nav-link:hover {
-  background-color: #4a47ffd2;
-  color: white;
+  background-color: #cdcdcdd2;
+  color: #00232b;
   transform: scale(1.05);
 }
 
 .nav-link-especial {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
 }
@@ -102,8 +101,8 @@
 }
 
 .offcanvas {
-  background-image: linear-gradient(-180deg, #e23737e0 0%, #1e4bc8d9 100%);
-  color: white;
+  background-image: linear-gradient(-180deg, #004353 0%, #0D5B6C 100%);
+  color: rgb(0, 0, 0);
 }
 
 .offcanvas-header {

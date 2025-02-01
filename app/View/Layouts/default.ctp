@@ -32,7 +32,7 @@
 		</div>
 		<div class="load">
 			<img src="img/estacioLogo.png" class="imgLogin imgLoad">
-			<img src="img/estacioNome.png" class="imgNomeLogin imgLoad">
+			<!-- <img src="img/estacioNome.png" class="imgNomeLogin imgLoad"> -->
 		</div>
 	</div>
 	<!-- jQuery deve ser carregado antes do Bootstrap -->

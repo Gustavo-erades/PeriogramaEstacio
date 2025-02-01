@@ -28,7 +28,7 @@
     bottom: 0;
     background-color: #ccc;
     /* cor do fundo */
-    border-radius: 34px;
+    /*border-radius: 34px;*/
     /* bordas arredondadas */
     transition: 0.4s;
     /* transição suave */
@@ -48,7 +48,7 @@
     /* posição inicial */
     background-color: white;
     /* cor do círculo */
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     /* deixa redondo */
     transition: 0.4s;
     /* transição suave */
@@ -77,15 +77,15 @@ input:checked + .slider:before {
     overflow: auto;
 }
 .caixa_perguntas {
-    background-color: #38b0e370;
     border-radius: 6px;
     padding: 8px;
     margin-bottom: 20px;
-    font-style: #ffffff;
+    font-style: #000000;
 }
 /* estilo para botão de salvar */
 .button-43 {
-    background-image: linear-gradient(-180deg, #378ae2e0 0%, #1e4bc8d9 100%);
+    /* background-image: linear-gradient(-180deg, #378ae2e0 0%, #1e4bc8d9 100%); */
+    background-color: #024757;
     border-radius: 0.5rem;
     box-sizing: border-box;
     color: #ffffff;
@@ -104,7 +104,8 @@ input:checked + .slider:before {
 }
 
 .button-43:hover {
-    background-image: linear-gradient(-180deg, #1e4bc8d9 0%, #17759c 100%);
+    /* background-image: linear-gradient(-180deg, #1e4bc8d9 0%, #17759c 100%); */
+    background-color: #162b30;
 }
 
 @media (min-width: 768px) {
@@ -123,15 +124,15 @@ a:active {
     transition: color 0.3s ease;
 }
 
-.navbarNovo.active {
+/* .navbarNovo.active {
     color: #3272a6;
-}
+} */
 /* estilo do botão de volta ao topo */
 .back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #3272a6;
+    background-color:#162b30;
     color: white;
     border: none;
     border-radius: 50%;
@@ -164,18 +165,18 @@ p {
 
 /* css novo paciente */
 body {
-    background: #000 url('../img/imgTeste2.png') no-repeat center center fixed;
+    background: #ffffff url('../img/backgroundPadrao.png') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     font-family: "Poppins", serif;
-    color: rgb(255, 255, 255); /* Define o texto padrão como branco */
+    color: rgb(0, 0, 0); /* Define o texto padrão como branco */
 }
 
 h1.display-4 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
-    color: white; /* Garante que o título seja branco */
+    color: rgb(0, 0, 0); /* Garante que o título seja branco */
     font-family: "Poppins", serif;
 }
 
@@ -183,7 +184,7 @@ h1.display-4 {
     font-size: 2.0rem;
     margin-bottom: 20px;
     font-weight: bold;
-    color: white; /* Garante que o título seja branco */
+    color: rgb(0, 0, 0); /* Garante que o título seja branco */
     font-family: "Poppins", serif
 }
 
@@ -192,16 +193,16 @@ h1.display-4 {
 }
 
 form {
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    color: rgb(255, 255, 255); /* Define o texto do formulário como branco */
+    color: rgb(0, 0, 0); /* Define o texto do formulário como branco */
 }
  
 .form-control {
     background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido mais sutil */
     border: 1px solid rgba(58, 123, 213, 0.5);
     border-radius: 10px;
-    color: rgb(255, 255, 255); /* Texto branco nos campos de entrada */
+    color: rgb(0, 0, 0); /* Texto branco nos campos de entrada */
     font-size: 30px;
     padding: 10px;
     transition: all 0.3s ease;
@@ -209,7 +210,7 @@ form {
 }
 
 .form-control::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* Placeholder com cor mais clara */
+    color: rgba(0, 0, 0, 0.7); /* Placeholder com cor mais clara */
 }
 
 .form-control:focus {
@@ -222,12 +223,12 @@ form {
 label {
     font-size: 1rem;
     font-weight: 500;
-    color: white; /* Labels brancas */
+    color: rgb(0, 0, 0); /* Labels brancas */
 }
 
 .btn-light_paciente {
     background-color: #3a7bd5;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 20px 50px; /* Ajusta o tamanho do botão */
     font-size: 2rem; /* Aumenta o tamanho da fonte */
