@@ -44,7 +44,7 @@
                                         <a href="http://localhost/PeriogramaEstacio/users/add">Faça seu cadastro</a>
                                     </p>
                                 -->
-                                <p class="text-secondary">Esqueceu a senha?</p>
+                                <p class="text-secondary">Esqueceu a senha? sim</p>
                                 
                             </div>
                             <div class="d-flex justify-content-center mt-0">
