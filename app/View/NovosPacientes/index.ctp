@@ -15,7 +15,7 @@
         </center>
     </div>
     <div>
-        <form id="formNovoPaciente" class="p-4 rounded" style="background-image: linear-gradient(-180deg, #378ae2e0 0%,rgba(30, 75, 200, 0.6) 100%); max-width: 1600px; margin: 20px;">
+        <form id="formNovoPaciente" class="p-4 rounded" style="background-color:rgba(13, 91, 108, 0.75);">
             <div class="form-group">
                 <center><label for="nome" class="h2">Nome Completo</label></center>
                 <input type="text" id="nome" name="nome" class="form-control form-control-lg" placeholder="Digite o nome completo" >

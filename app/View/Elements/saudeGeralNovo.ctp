@@ -1,16 +1,16 @@
 <style>
     .caixa_perguntas {
-        /*background-color: #C8DCED;*/
+        background-color: #C8DCED;
         background:rgba(119, 119, 119, 0.35);
         border-radius: 6px;
         padding: 8px;
         margin-bottom: 20px;
     }
     span{
-        color:#fff;
+        color: #ffffff;
     }
     label{
-        color:#fff;
+        color: #ffffff;
     }
 </style>
 
