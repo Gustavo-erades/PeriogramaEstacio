@@ -1,0 +1,89 @@
+
+/* css novo paciente */
+body {
+    background: #ffffff url('../img/backgroundPadrao.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Poppins", serif;
+    color: rgb(0, 0, 0); /* Define o texto padrão como branco */
+}
+
+h1.display-4 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Garante que o título seja branco */
+    font-family: "Poppins", serif;
+}
+
+.h2{ 
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Garante que o título seja branco */
+    font-family: "Poppins", serif
+}
+
+.container {
+    margin-top: 50px;
+}
+
+form {
+    /*border-radius: 15px;*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0); /* Define o texto do formulário como branco */
+}
+ 
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido mais sutil */
+    border: 1px solid rgba(58, 123, 213, 0.5);
+    border-radius: 10px;
+    color: rgb(0, 0, 0); /* Texto branco nos campos de entrada */
+    font-size: 30px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    font-family: "Poppins", serif;
+}
+
+.form-control::placeholder {
+    color: rgba(0, 0, 0, 0.7); /* Placeholder com cor mais clara */
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.90);
+    border-color: #3a7bd5;
+    box-shadow: 0 0 8px rgba(58, 123, 213, 0.5);
+    outline: none;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0); /* Labels brancas */
+}
+
+.btn-light_paciente {
+    background-color: #3a7bd5;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 20px 50px; /* Ajusta o tamanho do botão */
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    border-radius: 35px; /* Bordas mais arredondadas */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Faz o botão ocupar toda a largura do formulário */
+    max-width: 400px; /* Define um limite máximo maior para a largura */
+    margin: 20px auto; /* Centraliza o botão */
+    display: block; /* Garante que ele seja um bloco */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra para destaque */
+}
+
+.btn-light_paciente:hover {
+    background-color: #375a7f;
+    transform: scale(1.1); /* Aumenta ligeiramente o botão ao passar o mouse */
+}
+
+.btn-light_paciente:active {
+    background-color: #2e507a;
+    transform: scale(1);
+}
