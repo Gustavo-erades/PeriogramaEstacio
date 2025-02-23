@@ -97,28 +97,29 @@ padding: 8px;
 margin-bottom: 20px;
 font-style: #ffffff;
 }
-/* estilo para botão de salvar */
+/* Estilo para o botão */
 .button-43 {
-background-image: linear-gradient(-180deg, #378ae2e0 0%, #1e4bc8d9 100%);
-border-radius: 0.5rem;
-box-sizing: border-box;
-color: #ffffff;
-display: flex;
-font-size: 1.1em;
-font-weight: "bold";
-justify-content: center;
-padding: 1rem 1.35rem;
-text-decoration: none;
-width: 100%;
-border: 0;
-cursor: pointer;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
+    background-image: rgba(13, 91, 108, 0.75); /* Cor de fundo azul que combina com o site */
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 1.1em;
+    font-weight: bold;
+    justify-content: center;
+    padding: 1rem 1.35rem;
+    text-decoration: none;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
+/* Efeito de hover com transição suave */
 .button-43:hover {
-background-image: linear-gradient(-180deg, #1e4bc8d9 0%, #17759c 100%);
+    background-image: rgba(13, 91, 108, 0.75);
 }
 
 .button-43 {
@@ -197,35 +198,15 @@ input:checked+.slider:before {
     margin-bottom: 20px;
     font-style: #ffffff;
 }
-/* estilo para botão de salvar */
-.button-43 {
-    background-image: linear-gradient(-180deg, #378ae2e0 0%, #1e4bc8d9 100%);
-    border-radius: .5rem;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    display: flex;
-    font-size: 1.1em;
-    font-weight: 'bold';
-    justify-content: center;
-    padding: 1rem 1.35rem;
-    text-decoration: none;
-    width: 100%;
-    border: 0;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button-43:hover {
-    background-image: linear-gradient(-180deg, #1e4bc8d9 0%, #17759C 100%);
-  }
-  
-  @media (min-width: 768px) {
+
+
+/* Ajuste para telas maiores */
+@media (min-width: 768px) {
     .button-43 {
-      padding: 1rem 2rem;
+        padding: 1rem 2rem;
     }
-  }
+}
+  
 /* estilo navbar novo */
 a:hover, a:focus, a:active {
     text-decoration: none;
@@ -243,7 +224,7 @@ a:hover, a:focus, a:active {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background-color: #3272A6;
+        background-color: #0d5b6cdc;
         color: white;
         border: none;
         border-radius: 50%;
