@@ -1,9 +1,9 @@
 <div id="alert"></div>
 <form id="formularioNovo">
 <div class="text-center" id="saudegeral">
-    <h3 class=" mb-3 d-inline text-dark" style="font-weight:bold">
+    <center><h3 class=" mb-3 d-inline text-dark" style="font-weight:bold">
         <b>Saúde Geral</b>
-    </h3>
+    </h3></center>
      <?= $this->element('saudeGeralNovo'); ?>
 </div>
 
