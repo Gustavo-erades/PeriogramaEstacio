@@ -30,24 +30,37 @@ function cadastraPaciente(){
     var dataNascimento= $('#dataNascimento').val();
     var telefone= $('#telefone').val();
     var endereco= $('#endereco').val();
-    var alunoResponsavel= $('#alunoResponsavel').val();
+    var obs=$('#observacoes');
+    var email= $('#email').val();
 
-    if(nome == '' || dataNascimento == '' || telefone == '' || endereco == '' || alunoResponsavel == ''){
+    if(nome == '' || dataNascimento == '' || telefone == '' || endereco == ''){
         novoAlerta("campos obrigatórios não preenchidos!","danger");
         $('#nome').css('background-color','#f8d7da');
         $('#dataNascimento').css('background-color','#f8d7da');
         $('#telefone').css('background-color','#f8d7da');
         $('#endereco').css('background-color','#f8d7da');
-        $('#alunoResponsavel').css('background-color','#f8d7da');
+   
     }else{
-        var form=$('#formNovoPaciente').serialize();
-        console.log(form);
+        var dados= {
+            nome: nome,
+            dataNascimento: dataNascimento,
+            telefone: telefone,
+            endereco: endereco,
+            email:email,
+            obd:obs   
+        }
         $.ajax({
             type:'POST',
             url:'novosPacientes/add',
-            data:form,
+            data: JSON.stringify(dados),
+            contentType: 'application/json', 
+            dataType: 'json',
             success:(data)=>{
-                novoAlerta("paciente cadastrado com sucesso","success");
+                if(data.success==true){
+                    novoAlerta("paciente cadastrado com sucesso","success");
+                }else{
+                    novoAlerta("ocorreu um erro ao tentar cadastrar o paciente","danger");
+                }
             },
             error:(xhr, status, error)=>{
                 novoAlerta("não foi possível cadastrar paciente","danger");

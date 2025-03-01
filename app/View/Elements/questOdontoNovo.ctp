@@ -7,6 +7,9 @@
         padding: 8px;
         margin-bottom: 20px;
     }
+    .ck{
+        color:#000;
+    }
 </style>
 <div class="form-group mt-2 mb-5">
     <div class="caixa_perguntas">
