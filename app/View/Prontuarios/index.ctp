@@ -7,22 +7,33 @@
         <i class="fas fa-search text-light"></i>
     </span>
 </div>
+<div style="text-align:right">
+<p class="text-dark">
+    <?=sizeof($pacientesRegistrados)?> pacientes
+</p>
+</div>
+
 <div>
-    <div class="card w-100 mt-3 mb-3">
-        <div class="card-body">
-            <h5 class="card-title">Matt Mudorck</h5>
-            <p class="card-text">
-                cadastrado em 24/10/2024
-            </p>
-            <p class="card-text">
-                breve descrição da situação do paciente
-            </p>
-            <div>
-                <a href="#" class="btn btn-light">
-                    <i class="fas fa-download"></i>
-                </a>
-                <a href="#" class="btn btn-novaCor">Ver prontuário</a>
+    <?php foreach($pacientesRegistrados as $paciente): ?>
+        <div class="card w-100 mt-3 mb-3 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-dark"><?=$paciente['Paciente']['nome']?> #<?=$paciente['Paciente']['id']?> </h5>
+                <p class="card-text text-dark">
+                    <?=$paciente['Paciente']['email']?> 
+                </p>
+                <p class="card-text text-dark">
+                    <?=$paciente['Paciente']['idade']?> anos
+                </p>
+                <p class="card-text text-dark">
+                    <?=$paciente['Paciente']['obs']?>
+                </p>
+                <div>
+                    <a href="#" class="btn btn-light">
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#" class="btn btn-novaCor">Ver prontuário</a>
+                </div>
             </div>
         </div>
-    </div>
+    <?php endforeach; ?>
 </div>
